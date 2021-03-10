@@ -1,0 +1,30 @@
+[
+    {
+        "firstname": "Yuriy",
+        "lastname": "Mamonov",
+        "fullname": "Yuriy Mamonov",
+        "number": "14586",
+        "city": "Lviv"
+    },
+    {
+        "firstname": "Anna",
+        "lastname": "Yasinkovska",
+        "fullname": "Anna Yasinkovska",
+        "number": "02365844",
+        "city": "Kyiv"
+    },
+    {
+        "firstname": "Vasyl",
+        "lastname": "Yasinkovskyi",
+        "fullname": "Vasyl Yasinkovskyi",
+        "number": "1545454",
+        "city": "Dnipo"
+    },
+    {
+        "firstname": "Liudmyla",
+        "lastname": "Potsilyiko",
+        "fullname": "Liudmyka Potsilyiko",
+        "number": "52415454",
+        "city": "Mohyliv_podilskiy"
+    }
+]
