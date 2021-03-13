@@ -69,25 +69,17 @@ def is_prime(number):
 @time_execution
 def get_prime_threads(array):
     with concurrent.futures.ThreadPoolExecutor(max_workers=4) as executor:
-        for numb in array:
-            try:
-                future = executor.submit(is_prime, numb)
-            except Exception:
-                raise
-            else:
-                return future.result()
+        primes = executor.map(is_prime, array)
+        for prime in primes:
+            return prime
 
 
 @time_execution
 def get_prime_processes(array):
     with concurrent.futures.ProcessPoolExecutor(max_workers=4) as executor:
-        for numb in array:
-            try:
-                future = executor.submit(is_prime, numb)
-            except Exception:
-                raise
-            else:
-                print(future.result())
+        primes = executor.map(is_prime, array)
+        for prime in primes:
+            return prime
 
 
 if __name__ == '__main__':
