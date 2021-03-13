@@ -71,7 +71,7 @@ def get_prime_threads(array):
     with concurrent.futures.ThreadPoolExecutor(max_workers=4) as executor:
         primes = executor.map(is_prime, array)
         for prime in primes:
-            return prime
+            print(prime)
 
 
 @time_execution
@@ -79,7 +79,8 @@ def get_prime_processes(array):
     with concurrent.futures.ProcessPoolExecutor(max_workers=4) as executor:
         primes = executor.map(is_prime, array)
         for prime in primes:
-            return prime
+            print(prime)
+
 
 
 if __name__ == '__main__':
