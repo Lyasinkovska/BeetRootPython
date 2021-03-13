@@ -82,7 +82,6 @@ def get_prime_processes(array):
             print(prime)
 
 
-
 if __name__ == '__main__':
     get_prime_processes(NUMBERS)
     get_prime_threads(NUMBERS)
