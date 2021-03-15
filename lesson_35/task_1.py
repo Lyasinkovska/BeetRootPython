@@ -18,7 +18,7 @@ from lesson_34.task_1 import time_execution
 async def factorial(number):
     f = 1
     for i in range(2, number + 1):
-        await asyncio.sleep(1)
+        await asyncio.sleep(0.001)
         f *= i
     print(f"Factorial({number}) = {f}")
 
@@ -33,6 +33,7 @@ async def fibonacci(number):
         print(f"Fibonacci({number}) = {0}")
     else:
         for i in range(1, number):
+            await asyncio.sleep(0.001)
             a, b = b, a + b
         print(f"Fibonacci({number}) = {b}")
 
