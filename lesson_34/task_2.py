@@ -42,7 +42,7 @@ def save_to_json_file(text: list, filename: str) -> None:
 
 if __name__ == '__main__':
     URL = 'https://api.pushshift.io/reddit/comment/search/'
-    subreddits = "socialskills", "CasualIreland", "RoastMe"
+    subreddits = ("socialskills", "CasualIreland", "RoastMe")
     file_name = 'reddit_comments_socialskills.json'
 
     comments = get_comments_from_reddit(URL, params=subreddits)

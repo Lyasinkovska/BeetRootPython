@@ -6,7 +6,7 @@ HOST = '127.0.0.1'
 
 def get_port():
     parser = argparse.ArgumentParser(description='Query a port.')
-    parser.add_argument('-p', type=int, help='port')
+    parser.add_argument('-p', type=int, help='port', default=8888)
     args = vars(parser.parse_args())
     return args['p']
 
