@@ -1,0 +1,23 @@
+CREATE TABLE STUDENTS
+(
+    id      INTEGER NOT NULL PRIMARY KEY,
+    name    TEXT    NOT NULL,
+    surname TEXT    NOT NULL
+);
+
+ALTER TABLE STUDENTS
+    ADD COLUMN birth_year;
+
+INSERT INTO STUDENTS
+VALUES (3, 'Ivan', 'Ivanov', 1981);
+
+INSERT INTO STUDENTS
+VALUES (4, 'Oksana', 'Prots', 1998);
+
+UPDATE STUDENTS
+SET name = 'Liuda'
+WHERE name = 'Liudmyla';
+
+DELETE
+FROM STUDENTS
+WHERE birth_year = 1998
