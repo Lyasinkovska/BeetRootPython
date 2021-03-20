@@ -21,7 +21,7 @@ def create_cursor(connection):
 
 def create_table(cursor, table_name: str):
     cursor.execute(
-        f'CREATE TABLE IF NOT EXISTS {table_name}(id INTEGER NOT NULL PRIMARY KEY, fisrtname TEXT ,lastname TEXT)')
+        f'''CREATE TABLE IF NOT EXISTS {table_name}(id INTEGER NOT NULL PRIMARY KEY, fisrtname TEXT ,lastname TEXT)''')
 
 
 if __name__ == '__main__':
