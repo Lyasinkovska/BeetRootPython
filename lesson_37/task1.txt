@@ -3,7 +3,7 @@
 SQLite version 3.31.1 2020-01-27 19:55:54
 Enter ".help" for usage hints.
 
-CREATE TABLE STUDENTS( id INTEGER NOT NULL PRIMARY KEY, name varchar(30) NOT NULL, surname varchar(40) NOT NULL)
+CREATE TABLE STUDENTS(id INTEGER NOT NULL PRIMARY KEY, name varchar(30) NOT NULL, surname varchar(40) NOT NULL)
 
 ALTER TABLE STUDENTS
 ADD COLUMN birth_year
